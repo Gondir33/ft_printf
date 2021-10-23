@@ -64,7 +64,7 @@ int	ft_printaddress(t_param *param, int i)
 
 	address = va_arg(param->arg, unsigned long long);
 	if (address == 0)
-		param->len += write(1, "(nil)", 5);
+		param->len += write(1, "0x0", 3);
 	else
 	{
 		s = ft_itoa_address(address);
