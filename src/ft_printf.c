@@ -45,10 +45,8 @@ int	ft_print(const char *format, t_param *param)
 			i++;
 		}
 		if (i == -1)
-			break ;
+			return (-1);
 	}
-	if (i == -1)
-		return (-1);
 	else
 		return (param->len + totallen);
 }
