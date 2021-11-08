@@ -47,6 +47,5 @@ int	ft_print(const char *format, t_param *param)
 		if (i == -1)
 			return (-1);
 	}
-	else
 		return (param->len + totallen);
 }
